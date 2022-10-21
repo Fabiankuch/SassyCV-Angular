@@ -1,3 +1,4 @@
+
 .menu-btn {
     position: absolute;
     z-index: 1;
@@ -55,13 +56,30 @@
     };
 }
 
+.nav_below{
+    top: 55px !important;
+}
+
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    opacity: 0.98;
+    opacity: 0.2;
     visibility: hidden;
+    height:55px;
+    background-color: rgba(20, 169, 233, 0.349);
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.20;
+    -khtml-opacity: 0.2;
+    opacity: 1;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+
+
 
     &.open {
         visibility: visible;
@@ -102,7 +120,7 @@
             font-size: 2rem;
             text-transform: uppercase;
             padding: 2rem 0;
-            font-weight: 300;
+            font-weight: 350;
             @include transition-ease-slower;
 
             &:hover{
@@ -117,3 +135,4 @@
         transition-delay: ($i * 0.1s) + 0.15s;
     }
 }
+

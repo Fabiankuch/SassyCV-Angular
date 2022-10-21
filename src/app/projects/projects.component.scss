@@ -1,10 +1,11 @@
 @import "../../styles/styles.scss";
 
 .projects {
+   
     padding-bottom: 2rem;
 
     &__bio-image {
-        height: 30vh;
+        height: 45vh;
         width: 100%;
         background: 
         linear-gradient(
@@ -12,17 +13,23 @@
             rgba($primary-color, 0.6),
             rgba($primary-color, 0.1)
         ),
-        url("../../assets/img/star-circle-bg.jpg") center top;
+        url("../../assets/img/blue_forest_ai_crop.png") center top;
         background-size: cover;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         
-        .text-secondary {
-            font-size: 2rem;
+        .text-third {
+            font-size: 3rem;
             margin-bottom: 2rem;
-        
+            font-weight: 600;
+        }
+        .text-secondary {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
         }
     }
 
@@ -31,10 +38,12 @@
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
 
-       
+        img {
+            animation: zoom-in-zoom-out 20s ease infinite;
+        }
     }
 
     &__item {
@@ -96,16 +105,8 @@
         }
     }
 
-    .social-icons {
-        display: flex; 
-        flex-direction: column;
+    
 
-    }
-
-    footer {
-        transform: 
-            rotate(90deg) 
-            translate(-3rem, -5rem)
-    }
+    
     
 }

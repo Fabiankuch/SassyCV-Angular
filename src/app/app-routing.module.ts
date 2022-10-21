@@ -7,11 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'projects', component: ProjectsComponent},
-  { path: '', component: HomeComponent},
+  { path: 'home', component: HomeComponent, data: { animationState: 'One' }},
+  { path: 'about', component: AboutComponent, data: { animationState: 'Two' }},
+  { path: 'projects', component: ProjectsComponent, data: { animationState: 'Three' }},
+  { path: 'contact', component: ContactComponent, data: { animationState: 'Four' }},
+  { path: '', component: HomeComponent, data: { animationState: 'One' }},
 
 
 ];
